@@ -58,6 +58,11 @@ class PersianValidationServiceProvider extends ServiceProvider
             Validator::replacer($name, 'ValidationMessages@Msg');
         }
 
+        // create custom rule for PackageName
+        Validator::extend('float_num', 'ValidationRules@FloatNum');
+        // create custom message for PackageName
+        Validator::replacer('float_num', 'ValidationMessages@Msg');
+
     }
 
     /**
