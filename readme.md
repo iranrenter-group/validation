@@ -22,7 +22,7 @@ Laravel Persian Validation is open-sourced software licensed under the [MIT lice
 Via Composer
 
 ``` bash
-$ composer require Anetwork/Validation
+$ composer require iranrenter-group/Validation
 ```
 
 ## Config
