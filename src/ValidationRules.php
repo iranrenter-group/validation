@@ -86,7 +86,7 @@ class ValidationRules
     {
         ValidationMessages::setCustomMessages( $validator );
 
-        if ((bool) preg_match('/^(((98)|(\+98)|(0098)|0)(9){1}[0-9]{9})+$/', $value) || (bool) preg_match('/^(9){1}[0-9]{9}+$/', $value))
+        if ((bool) preg_match('/^((0)(9){1}[0-9]{9})+$/', $value) || (bool) preg_match('/^(0)(9){1}[0-9]{9}+$/', $value))
             return true;
 
         return false;
